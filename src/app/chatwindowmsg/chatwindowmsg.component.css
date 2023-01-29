@@ -1,0 +1,19 @@
+.msgContainer{
+    display: flex;
+    height: 100%;
+    /* width: 80%; */
+}
+
+.msgPart{
+    width: 80%;
+    height: 80%;
+    margin: auto;
+}
+.emoji{
+    height: 80%;
+    width: 20%;
+    margin: auto;
+}
+.msgDiv{
+   height: 100%;
+}

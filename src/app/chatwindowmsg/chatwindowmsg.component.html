@@ -1,1 +1,15 @@
-<p>chatwindowmsg works!</p>
+<div class="msgContainer">
+    <div class="msgPart" contenteditable="true">
+        <div class="form-control msgDiv" contentEditable=true data-ph="Type a msg"></div>
+        <style>
+            [contentEditable=true]:empty:before{
+                content:attr(data-ph)
+            }
+        </style>
+    </div>
+    <div class="emoji">
+
+    </div>
+
+
+</div>

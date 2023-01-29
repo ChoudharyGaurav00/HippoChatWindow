@@ -8,7 +8,9 @@ import { AllchatsComponent } from './allchats/allchats.component';
 import { ChatwindowheaderComponent } from './chatwindowheader/chatwindowheader.component';
 import { ChatwindowmsgComponent } from './chatwindowmsg/chatwindowmsg.component';
 import { ChatwindowcontentComponent } from './chatwindowcontent/chatwindowcontent.component';
-
+// import  {  NgxEmojiPickerModule  }  from  'ngx-emoji-picker';
+import { PickerModule } from '@ctrl/ngx-emoji-mart';
+import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +22,9 @@ import { ChatwindowcontentComponent } from './chatwindowcontent/chatwindowconten
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    PickerModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
