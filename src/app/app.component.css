@@ -1,0 +1,10 @@
+.parentContainer{
+    display: flex;
+    height: 100vh;
+}
+.leftSide{
+    width: 30%;
+}
+.rightSide{
+    width: 70%;
+}

@@ -1,0 +1,44 @@
+.headerContainer{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+.headerLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+
+.headerRight{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bdgVisitor{
+    height: 80%;
+    border-radius: 50%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: brown;
+    /* aspect-ratio: 1; */
+}
+.visitorInfo{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    overflow: hidden;
+}
+.visitorLogo{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+}
