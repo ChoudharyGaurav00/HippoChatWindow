@@ -1,0 +1,81 @@
+.msgContainer{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    overflow-y: auto;
+}
+.customerP{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #16449b;
+    color: white;
+}
+
+.customerA{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: #f0f4f8;
+    color: #2f2f2f;
+}
+.msgnum{
+    display: flex;
+    width: 100%;
+    margin-bottom:auto;
+
+}
+.agentInitials{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.msgCustomer{
+    margin-left: 1rem;
+    margin-right: 1rem;
+
+}
+.bdgVisitor{
+    border-radius: 50%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: rgb(158, 157, 36);
+    aspect-ratio: 1;
+}
+.bdgAgent{
+    /* height: 80%; */
+    border-radius: 50%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: rgb(38, 166, 154);;
+    aspect-ratio: 1;
+}
+.visitorLogo{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+}
+.agentLogo{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+}
+.agentClass{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.scroll-bar{
+    width: 2px;
+}
+.msg{
+    width: 95%;
+}

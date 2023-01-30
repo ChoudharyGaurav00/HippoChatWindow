@@ -3,8 +3,13 @@
     height: 100vh;
 }
 .leftSide{
-    width: 30%;
+    width: 25%;
+    
 }
 .rightSide{
-    width: 70%;
+    width: 75%;
+    /* margin-right: auto; */
+    /* margin-left: auto; */
+    border: solid;
+    border-color: #F2F4F6;
 }

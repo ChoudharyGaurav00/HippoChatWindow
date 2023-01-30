@@ -1,0 +1,63 @@
+.allChatsContainer{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-y: scroll;
+   /* overflow-y: auto; */
+}
+.msgNum{
+    display: flex;
+    flex-direction: row;
+
+}
+.msgNum:hover{
+    background-color: #4d7cfe1a;
+}
+.msg{
+    display: flex;
+    flex-direction: column;
+}
+.msgText{
+    overflow: hidden;
+}
+
+
+.bdgVisitor{
+    border-radius: 50%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: rgb(158, 157, 36);
+    aspect-ratio: 1;
+}
+.bdgAgent{
+    /* height: 80%; */
+    border-radius: 50%;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    background-color: rgb(38, 166, 154);
+    aspect-ratio: 1;
+}
+.customerLogo{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+}
+.agentLogo{
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+}
+.agentClass{
+    display: flex;
+    flex-direction: row-reverse;
+}

@@ -1,3 +1,10 @@
+.btn{
+    margin: auto;
+}
+.chatCreate{
+    display: flex;
+    align-items: center;    
+}
 .headerContainer{
     display: flex;
     justify-content: space-between;
