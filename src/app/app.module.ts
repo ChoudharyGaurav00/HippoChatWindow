@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule ,routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ChatwindowComponent } from './chatwindow/chatwindow.component';
 import { AllchatsComponent } from './allchats/allchats.component';
@@ -11,6 +11,7 @@ import { ChatwindowcontentComponent } from './chatwindowcontent/chatwindowconten
 // import  {  NgxEmojiPickerModule  }  from  'ngx-emoji-picker';
 import { PickerModule } from '@ctrl/ngx-emoji-mart';
 import { FormsModule } from '@angular/forms';
+import { ChatdataService } from './chatdata.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +19,8 @@ import { FormsModule } from '@angular/forms';
     AllchatsComponent,
     ChatwindowheaderComponent,
     ChatwindowmsgComponent,
-    ChatwindowcontentComponent
+    ChatwindowcontentComponent,
+    routingComponents
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,7 @@ import { FormsModule } from '@angular/forms';
     PickerModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ChatdataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
