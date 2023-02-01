@@ -10,6 +10,7 @@
     height: 80%;
     margin: 12px 10px 0 45px;
     overflow-y: auto;
+    padding-top: 15px;
 }
 .emoji{
     height: 80%;

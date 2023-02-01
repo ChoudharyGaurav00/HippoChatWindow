@@ -1,43 +1,56 @@
 import { Injectable } from '@angular/core';
 import { DatePipe } from '@angular/common';
-import { msgInterface } from './msgInf';
+import { chatInterface } from './chatInf';
+import { messageInterface } from './msgInterface';
+import { OnInit } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class ChatdataService {
+export class ChatdataService  {
 
-  public curMsg:msgInterface={} as msgInterface;
   public keyNum:number=0;
   public agentS:string="A";
-  public welcomeMsg:string="Welcome to hippo chat";
-  public msgArr:msgInterface[]=[];
+  public chatArr:chatInterface[]=[];
   
-  constructor() { }
+  constructor() { 
+    // this.currentMessage.timeArr=new Array();
+  }
   
-  
-
-
+  public chatid=-1; 
   public curDate=new Date();
-  storeData(usr:string){
-      console.log(usr);
-      this.curMsg.key=this.keyNum;
-      this.curMsg.username=usr;
+  storeData(usr:string)
+  {
+    let welcomeMsg:string="Welcome to hippo chat";
+    let currentMessage:messageInterface={} as messageInterface;
+    let currentChat:chatInterface={} as chatInterface;  
+    // console.log(usr);
+      // currentMessage.key=this.keyNum;
+      // currentMessage.username=usr;
+      console.log("storing data ");
+     
       this.curDate=new Date();
-      this.curMsg.timeArr=new Array();
-      this.curMsg.timeArr.push(this.curDate);
-      this.curMsg.senderArr=new Array();
-      this.curMsg.senderArr.push("A");
-      this.curMsg.msgArr=new Array();
-      this.curMsg.msgArr.push(this.welcomeMsg);
-  
-      console.log(this.curMsg);
-      this.msgArr.push(this.curMsg);
-      console.log("Msg Array");
-      console.log(this.msgArr);
       
-      this.keyNum++;
-   
+      
+      currentMessage.time=(this.curDate);
+      currentMessage.sender=("A");
+      currentMessage.content=welcomeMsg;
+      console.log("message content");
+      console.log(currentMessage);
 
+      currentChat.key=this.keyNum;
+      currentChat.username=usr;
+      currentChat.messageArr=[];
+      currentChat.messageArr.push(currentMessage);
+      this.chatArr.push(currentChat);
+      console.log("Current Chat");
+      console.log(currentChat);
+      
+      console.log("chat array");
+      console.log(this.chatArr)
+
+      this.keyNum++;
+      
+   
   }
 
 }

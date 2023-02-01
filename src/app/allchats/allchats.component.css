@@ -43,6 +43,7 @@
     color: white;
     background-color: rgb(158, 157, 36);
     aspect-ratio: 1;
+    text-transform: uppercase;
 }
 .bdgAgent{
     /* height: 80%; */

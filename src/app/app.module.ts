@@ -12,6 +12,7 @@ import { ChatwindowcontentComponent } from './chatwindowcontent/chatwindowconten
 import { PickerModule } from '@ctrl/ngx-emoji-mart';
 import { FormsModule } from '@angular/forms';
 import { ChatdataService } from './chatdata.service';
+import { UserchatComponent } from './userchat/userchat.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +21,7 @@ import { ChatdataService } from './chatdata.service';
     ChatwindowheaderComponent,
     ChatwindowmsgComponent,
     ChatwindowcontentComponent,
+    UserchatComponent,
     routingComponents
   ],
   imports: [
@@ -27,6 +29,7 @@ import { ChatdataService } from './chatdata.service';
     AppRoutingModule,
     PickerModule,
     FormsModule
+
   ],
   providers: [ChatdataService],
   bootstrap: [AppComponent]
