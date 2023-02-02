@@ -8,13 +8,13 @@
 
     <div *ngFor="let chat of chatsArr">
 
-        <div (click)="selectUser(chat.key)"  class="msgNum">
+        <div (click)="selectUser(chat.key)"  class="msgNum  chatNumber{{chat.key}}" [class.active]="chatService.chatid==chat.key"    >
         
                 <div class="customerLogo">
                     <span class="bdgVisitor">{{chat.username[0]}}</span>
                 </div>
             
-            <div class="msg" >
+            <div class="msg"  >
                 <div class="customer">
                     <h6>{{chat.username}}</h6>
                 </div>

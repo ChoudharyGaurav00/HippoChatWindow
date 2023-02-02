@@ -32,7 +32,7 @@ export class ChatdataService  {
       
       
       currentMessage.time=(this.curDate);
-      currentMessage.sender=("A");
+      currentMessage.senderType=1;
       currentMessage.content=welcomeMsg;
       console.log("message content");
       console.log(currentMessage);

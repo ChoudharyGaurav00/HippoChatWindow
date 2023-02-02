@@ -1,12 +1,11 @@
-Selected chat {{chatservice.chatid}}
+
 <div class="msgContainer">
     <!-- Trying Dynamic -->
-    {{show}}
     <div class="dynamic-chats-container" >
     <div   *ngIf="show" >
         <div  class="loopingContainer msgnum  "  *ngFor="let temp of currentChat.messageArr"> 
            
-            <div class="choosingtype" *ngIf="(temp.sender=='C');then  firstBlock;else secondBlock"></div>
+            <div class="choosingtype" *ngIf="(temp.senderType==0);then  firstBlock;else secondBlock"></div>
             <ng-template #firstBlock>
                 <div class="visitorLogo">
                     <span class="bdgVisitor">{{currentChat.username[0]}}</span>

@@ -12,14 +12,14 @@ export class ChatwindowmsgComponent {
   public curDate=new Date();
   
 
-  storeCurrentMsg(message:string ,sender:string)
+  storeCurrentMsg(message:string ,sender:number)
   {
     // let sndr="A";
     this.curDate=new Date();
     let time=this.curDate;
     let currentMsg: messageInterface={} as messageInterface;
     currentMsg.content=message;
-    currentMsg.sender=sender;
+    currentMsg.senderType=sender;
     currentMsg.time=this.curDate; 
     this.chatservice.chatArr[this.chatservice.chatid].messageArr.push(currentMsg);
    
@@ -34,7 +34,7 @@ export class ChatwindowmsgComponent {
  {
   console.log("in agent chat");
   let content=message.innerText;
-  let sender="A"; 
+  let sender=1; 
   this.storeCurrentMsg(content,sender);
 
   }
@@ -44,7 +44,7 @@ export class ChatwindowmsgComponent {
 
   let content=message.innerText;
   console.log("storing message",content);
-  let sender="C"; 
+  let sender=0; 
   this.storeCurrentMsg(content,sender);
 
  }

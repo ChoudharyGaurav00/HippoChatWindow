@@ -1,15 +1,16 @@
-.parentContainer{
-    display: flex;
-    height: 100vh;
+.parentContainer {
+  display: flex;
+  height: 100vh;
 }
-.leftSide{
-    width: 25%;
-    
+.leftSide {
+  width: 25%;
 }
-.rightSide{
-    width: 75%;
-    /* margin-right: auto; */
-    /* margin-left: auto; */
-    border: solid;
-    border-color: #F2F4F6;
+.rightSide {
+  width: 75%;
+  /* margin-right: auto; */
+  /* margin-left: auto; */
+  border: solid;
+  border-color: #f2f4f6;
+  /* box-shadow: 0px 2px grey; */
+  box-shadow: inset 0px 0px 1px 1px grey;
 }

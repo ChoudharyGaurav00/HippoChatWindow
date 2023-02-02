@@ -9,13 +9,14 @@ import { Router } from '@angular/router';
 })
 export class AllchatsComponent implements OnInit{
   public chatsArr:chatInterface[]=[];
-  constructor(public chats:ChatdataService,public router:Router){}
+  
+  constructor(public chatService:ChatdataService,public router:Router){}
   // constructor(private router:Router){}
 
   ngOnInit() {
     // console.warn("in all chats");  
     // console.warn(this.chats.msgArr);
-    this.chatsArr=this.chats.chatArr;
+    this.chatsArr=this.chatService.chatArr;
     // console.warn("exit all chats");  
      
   }
