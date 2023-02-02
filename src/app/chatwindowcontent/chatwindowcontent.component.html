@@ -14,7 +14,7 @@
                 
                 <div class="msg" >
                     <div class="customer">
-                        <h6>{{currentChat.username}}</h6>
+                        <h6>{{currentChat.username}},  {{temp.time| date: 'shortTime'}}</h6>
                     </div>
                     <div class="msgText msgCustomer">
                         <p class="customerP">{{temp.content}}</p>
@@ -32,7 +32,7 @@
                 
                 <div class="msg msgA" >
                     <div class="agentInitials">
-                        <h6>Agent</h6>
+                        <h6>Agent,  {{temp.time| date: 'shortTime' }}   </h6>
                     </div>
                     <div class="msgText">
                         <p class="customerA">{{temp.content}}</p>
