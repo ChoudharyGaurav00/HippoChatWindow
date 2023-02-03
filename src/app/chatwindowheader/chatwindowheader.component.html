@@ -1,15 +1,15 @@
-<!-- {{id}} -->
 
 <div class="headerContainer">
-
+    
     <div class="headerLeft">
         <div class="visitorLogo">
-            <span class="bdgVisitor">V</span>
+            <span class="bdgVisitor">{{chatService.chatArr[chatService.chatid].username[0]}}</span>
         </div>
         
         <div class="visitorInfo">
-            <h6  style="margin-bottom: 0">Visitor</h6>
-            <p _ngcontent-kcl-c16="" style="color: #5a626a; font-size: 13px;">Last logged in 2 days ago</p>
+            <h6  style="margin-bottom: 0px; text-transform :  capitalize">{{chatService.chatArr[chatService.chatid].username}}</h6>
+
+            <p _ngcontent-kcl-c16="" style="color: #5a626a; font-size: 13px;">Last logged in {{chatService.chatArr[chatService.chatid].messageArr  [chatService.chatArr[chatService.chatid].messageArr.length-1].time | date:'short' }}</p>
         </div>
     </div>
     <div class="headerRight">

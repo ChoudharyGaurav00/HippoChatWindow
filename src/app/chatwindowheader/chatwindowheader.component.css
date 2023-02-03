@@ -39,6 +39,7 @@
   align-items: center;
   display: flex;
   color: white;
+  text-transform: uppercase;
   background-color: rgb(158, 157, 36);
   /* aspect-ratio: 1; */
 }
@@ -50,7 +51,7 @@
   overflow: hidden;
   margin-left: 5px;
   /* margin-top: 10px; */
-  padding-top: 6px ;
+  padding-top: 6px;
 }
 .visitorLogo {
   height: 100%;
